@@ -7,6 +7,7 @@ module.exports = {
       black: "#000",
       white: "#fff",
       yellow: "#FFB509",
+      lightgray: "#F7F7F7",
     },
     fontFamily: {
       passion: ["Passion One", "cursive"],

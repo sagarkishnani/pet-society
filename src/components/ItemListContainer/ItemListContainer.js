@@ -1,9 +1,26 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import { pedirDatos } from "../../helpers/pedirDatos";
+import { ItemList } from "../ItemList/ItemList";
+import { Loading } from "../Loading/Loading";
 
-export const ItemListContainer = ({ greeting }) => {
-  return (
-    <section className="item-list-container">
-      <h2>{greeting}</h2>
-    </section>
-  );
+export const ItemListContainer = () => {
+  const [productos, setProductos] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+
+    pedirDatos()
+      .then((res) => {
+        setProductos(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+
+  return <>{loading ? <Loading /> : <ItemList productos={productos} />}</>;
 };
