@@ -1,1 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+hr {
+  border: 1px solid rgb(44, 44, 44);
+  border-radius: 5px;
+}
+
+.banner {
+  background-image: url(../src/images/banner.svg);
+  height: 610px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fc2f31;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ce2a2d;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    background-color: #ffb509;
+    height: auto;
+  }
+}

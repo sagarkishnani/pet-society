@@ -6,6 +6,7 @@ export const stock = [
     precio: 120,
     img: "https://fancypets.pe/wp-content/uploads/8023222191648_1.jpg",
     stock: 8,
+    categoria: "casacas",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const stock = [
     precio: 130,
     img: "https://fancypets.pe/wp-content/uploads/8023222219755_1.jpg",
     stock: 3,
+    categoria: "casacas",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const stock = [
     precio: 90,
     img: "https://fancypets.pe/wp-content/uploads/8023222218383_1.jpg",
     stock: 2,
+    categoria: "casacas",
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const stock = [
     precio: 60,
     img: "https://fancypets.pe/wp-content/uploads/811618012220_1.jpg",
     stock: 1,
+    categoria: "camisas",
   },
   {
     id: 5,
@@ -38,5 +42,6 @@ export const stock = [
     precio: 70,
     img: "https://fancypets.pe/wp-content/uploads/878962005827_2.jpg",
     stock: 10,
+    categoria: "camisas",
   },
 ];

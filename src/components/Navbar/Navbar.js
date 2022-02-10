@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { CartWidget } from "../CartWidget/CartWidget";
 
 export const Navbar = () => {
@@ -10,21 +11,27 @@ export const Navbar = () => {
         <span className="block w-8 h-1 bg-black"></span>
       </div>
       <div className="hover:scale-[1.1] duration-1000">
-        <a href="#" className="font-passion text-4xl">
+        <Link to="/" className="font-passion text-4xl">
           PET SOCIETY
-        </a>
+        </Link>
       </div>
       <div className="hidden md:block font-nunito px-8 text-xl">
-        <div></div>
-        <a className="px-12 hover:underline underline-offset-8" href="#">
+        <Link
+          to="/"
+          className="px-12 hover:underline underline-offset-8"
+          href="#"
+        >
           Inicio
-        </a>
+        </Link>
         <a className="px-12 hover:underline underline-offset-8" href="#">
           Nosotros
         </a>
-        <a className="px-12 hover:underline underline-offset-8" href="#">
+        <Link
+          to="/productos"
+          className="px-12 hover:underline underline-offset-8"
+        >
           Productos
-        </a>
+        </Link>
         <a className="px-12 hover:underline underline-offset-8" href="#">
           Contacto
         </a>
