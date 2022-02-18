@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 export default function ItemFilter() {
   return (
-    <div className="rounded-xl shadow-md  p-8 bg-white h-96 w-64">
+    <div className="h-96 w-64 rounded-xl bg-white p-8 shadow-md">
       <h1 className="font-passion text-4xl">Categorías</h1>
       <ul className="pt-4">
         <Link to="/productos/casacas">
-          <li className="font-nunito text-gray font-bold text-xl pb-2">
+          <li className="font-nunito text-gray pb-2 text-xl font-bold">
             Casacas
           </li>
         </Link>
         <Link to="/productos/camisas">
-          <li className="font-nunito text-xl text-gray font-bold pb-2">
+          <li className="font-nunito text-gray pb-2 text-xl font-bold">
             Camisas
           </li>
         </Link>

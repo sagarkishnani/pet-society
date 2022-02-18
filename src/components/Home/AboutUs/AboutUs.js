@@ -2,8 +2,8 @@ import React from "react";
 
 export default function AboutUs() {
   return (
-    <div className="bg-white h-[32rem] rounded-lg md:flex md:flex-row md:justify-center md:items-center">
-      <div className="p-12 flex flex-row">
+    <div className="h-[32rem] rounded-lg bg-white md:flex md:flex-row md:items-center md:justify-center">
+      <div className="flex flex-row p-12">
         <div className="bg-lightgreen rounded-lg md:p-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -22,13 +22,13 @@ export default function AboutUs() {
           </svg>
         </div>
         <div>
-          <h3 className="pl-2 font-passion text-2xl">Delivery</h3>
-          <p className="pl-2 font-nunito text-lg max-w-lg">
+          <h3 className="font-passion pl-2 text-2xl">Delivery</h3>
+          <p className="font-nunito max-w-lg pl-2 text-lg">
             Contamos con delivery gratuito
           </p>
         </div>
       </div>
-      <div className="p-12 flex flex-row">
+      <div className="flex flex-row p-12">
         <div className="bg-beige rounded-lg md:p-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,13 +46,13 @@ export default function AboutUs() {
           </svg>
         </div>
         <div>
-          <h3 className="pl-2 font-passion text-2xl">Calidad</h3>
-          <p className="pl-2 font-nunito text-lg md:max-w-lg">
+          <h3 className="font-passion pl-2 text-2xl">Calidad</h3>
+          <p className="font-nunito pl-2 text-lg md:max-w-lg">
             Nuestros productos son de 100% algodón
           </p>
         </div>
       </div>
-      <div className="p-12 flex flex-row">
+      <div className="flex flex-row p-12">
         <div className="bg-lightpurple rounded-lg md:p-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -70,8 +70,8 @@ export default function AboutUs() {
           </svg>
         </div>
         <div>
-          <h3 className="pl-2 font-passion text-2xl">Variedad</h3>
-          <p className="pl-2 font-nunito text-lg">
+          <h3 className="font-passion pl-2 text-2xl">Variedad</h3>
+          <p className="font-nunito pl-2 text-lg">
             Tenemos productos de todo tipo
           </p>
         </div>

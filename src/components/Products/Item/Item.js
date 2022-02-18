@@ -2,21 +2,21 @@ import { Link } from "react-router-dom";
 
 export const Item = ({ id, nombre, precio, img, desc }) => {
   return (
-    <div className="rounded-xl shadow-md p-18 m-6 h-96 w-96 md:h-[28rem] md:w-[22rem] bg-white text-center">
+    <div className="p-18 m-6 h-96 w-96 rounded-xl bg-white text-center shadow-md md:h-[28rem] md:w-[22rem]">
       <div>
         <img
-          className="h-72 w-72 md:h-72 md:w-96 m-auto"
+          className="m-auto h-72 w-72 md:h-72 md:w-96"
           src={img}
           alt={nombre}
         ></img>
       </div>
       <Link to={`/detail/${id}`}>
-        <h1 className="font-nunito text-lg font-bold text-center">{nombre}</h1>
+        <h1 className="font-nunito text-center text-lg font-bold">{nombre}</h1>
       </Link>
-      <div className="flex flex-row justify-around pt-12 items-center">
-        <p className="font-nunito font-bold text-gray text-xl">S/.{precio}</p>
+      <div className="flex flex-row items-center justify-around pt-12">
+        <p className="font-nunito text-gray text-xl font-bold">S/.{precio}</p>
         <Link to={`/detail/${id}`}>
-          <button className="font-nunito drop-shadow w-24 bg-lightred text-white rounded-3xl p-3 hover:scale-110 duration-1000">
+          <button className="font-nunito bg-lightred w-24 rounded-3xl p-3 text-white drop-shadow duration-1000 hover:scale-110">
             <div className="flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

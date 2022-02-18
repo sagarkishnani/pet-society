@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="bg-black py-16">
-      <div className="pb-20 flex flex-row justify-around">
+      <div className="flex flex-row justify-around pb-20">
         <div>
-          <Link to="/" className="font-passion text-white text-4xl">
+          <Link to="/" className="font-passion text-4xl text-white">
             PET SOCIETY
           </Link>
-          <p className="pt-4 font-nunito text-lightgray text-lg max-w-xs">
+          <p className="font-nunito text-lightgray max-w-xs pt-4 text-lg">
             En Pet Society vendemos los mejores productos para tu mascota.
           </p>
         </div>
         <div>
-          <Link to="/productos" className="font-passion text-white text-xl">
+          <Link to="/productos" className="font-passion text-xl text-white">
             PRODUCTOS
           </Link>
           <ul className="pt-4">
@@ -24,7 +24,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <Link to="/contacto" className="font-passion text-white text-xl">
+          <Link to="/contacto" className="font-passion text-xl text-white">
             CONTACTO
           </Link>
           <ul className="pt-4">
