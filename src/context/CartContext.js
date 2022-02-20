@@ -6,7 +6,11 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const agregarAlCarrito = (item) => {
-    setCart([...cart, item]);
+    if (item.id === isInCart) {
+      console.log("Ya está en el carrito");
+    } else {
+      setCart([...cart, item]);
+    }
   };
 
   const isInCart = (id) => {

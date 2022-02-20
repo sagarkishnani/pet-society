@@ -2,12 +2,13 @@ import { useContext } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
+import { Cart } from "../Cart/Cart";
 
 export const CartWidget = () => {
-  const { cantidadCart } = useContext(CartContext);
+  const { cantidadCart, cart } = useContext(CartContext);
 
   return (
-    <Link to="/cart">
+    <Link to="/cart" className={cart.length === 0 ? "invisible" : "visible"}>
       <div className="relative m-8 duration-1000 hover:scale-125">
         <a href="#">
           <svg
