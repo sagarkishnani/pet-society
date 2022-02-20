@@ -38,7 +38,7 @@ export const stock = [
   {
     id: 5,
     nombre: "Doggie Design Camisa Algodón Paradise Night",
-    desc: "Una cálida noche tropical, el sonido de las olas sobre la arena y una banda de tambores de acero en la distancia … viste a esos cachorros con estilo para esas cálidas noches de verano con la camiseta del campamento hawaiano Paradise Nights. ",
+    desc: "Una cálida noche tropical, el sonido de las olas sobre la arena y una banda de tambores de acero en la distancia … viste a esos cachorros con estilo para esas cálidas noches de verano con la camiseta del campamento hawaiano Paradise Nights.",
     precio: 70,
     img: "https://fancypets.pe/wp-content/uploads/878962005827_2.jpg",
     stock: 10,

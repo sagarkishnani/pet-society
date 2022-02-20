@@ -8,7 +8,7 @@ export const CartWidget = () => {
   const { cantidadCart, cart } = useContext(CartContext);
 
   return (
-    <Link to="/cart" className={cart.length === 0 ? "invisible" : "visible"}>
+    <Link to="/cart">
       <div className="relative m-8 duration-1000 hover:scale-125">
         <a href="#">
           <svg

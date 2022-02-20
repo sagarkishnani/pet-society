@@ -16,6 +16,16 @@ export default function ItemFilter() {
             Camisas
           </li>
         </Link>
+        <Link to="/productos/polos">
+          <li className="font-nunito text-gray pb-2 text-xl font-bold">
+            Polos
+          </li>
+        </Link>
+        <Link to="/productos/chalecos">
+          <li className="font-nunito text-gray pb-2 text-xl font-bold">
+            Chalecos
+          </li>
+        </Link>
       </ul>
     </div>
   );

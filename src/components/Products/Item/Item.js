@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../../context/CartContext";
 
 export const Item = ({ id, nombre, precio, img, desc }) => {
+  const { isInCart } = useContext(CartContext);
+
   return (
     <div className="p-18 m-6 h-96 w-96 rounded-xl bg-white text-center shadow-md md:h-[28rem] md:w-[22rem]">
       <div>
