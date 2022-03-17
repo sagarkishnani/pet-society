@@ -101,9 +101,11 @@ export const Cart = () => {
           <h2 className="inline pt-8 text-right text-xl font-bold">
             SUBTOTAL: S/.{totalCart()}
           </h2>
-          <button className="font-nunito bg-lightred text-md mt-8 block w-full rounded-lg p-2 text-white drop-shadow duration-1000 hover:scale-110">
-            Comprar
-          </button>
+          <Link to={"/checkout"}>
+            <button className="font-nunito bg-lightred text-md mt-8 block w-full rounded-lg p-2 text-white drop-shadow duration-1000 hover:scale-110">
+              Comprar
+            </button>
+          </Link>
         </div>
       </div>
     </div>
